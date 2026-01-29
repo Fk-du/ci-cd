@@ -28,7 +28,7 @@ class TaskControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockitoBean
+    @MockitoBean // changed from @MockBean
     private TaskService taskService;
 
     @Autowired
