@@ -25,10 +25,10 @@ jobs:
           cache: maven
 
       - name: Compile the project
-        run: ./mvnw clean compile
+        run: mvn clean compile
 
       - name: Run unit tests
-        run: ./mvnw test
+        run: mvn test
 
       - name: Upload test results
         if: always()
