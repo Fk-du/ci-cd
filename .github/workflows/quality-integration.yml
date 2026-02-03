@@ -28,7 +28,7 @@ jobs:
         run: mvn clean compile
 
       - name: Run integration tests
-        run: mvn verify -pintegration-test
+        run: mvn verify -Pintegration-test
 
       - name: Upload test results
         if: always()
